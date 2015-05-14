@@ -14,6 +14,10 @@
 		EC794C0C1B0340B00097F82C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC794C0B1B0340B00097F82C /* Images.xcassets */; };
 		EC794C0F1B0340B00097F82C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC794C0D1B0340B00097F82C /* LaunchScreen.xib */; };
 		EC794C1B1B0340B00097F82C /* TestRecordVoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC794C1A1B0340B00097F82C /* TestRecordVoiceTests.m */; };
+		EC794C251B039E0D0097F82C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC794C241B039E0D0097F82C /* AVFoundation.framework */; };
+		EC794C271B039E180097F82C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC794C261B039E180097F82C /* CoreFoundation.framework */; };
+		EC794C291B039E1F0097F82C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC794C281B039E1F0097F82C /* Foundation.framework */; };
+		EC794C2B1B039E270097F82C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC794C2A1B039E270097F82C /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		EC794C141B0340B00097F82C /* TestRecordVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestRecordVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC794C191B0340B00097F82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC794C1A1B0340B00097F82C /* TestRecordVoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRecordVoiceTests.m; sourceTree = "<group>"; };
+		EC794C241B039E0D0097F82C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC794C261B039E180097F82C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EC794C281B039E1F0097F82C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC794C2A1B039E270097F82C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC794C2B1B039E270097F82C /* UIKit.framework in Frameworks */,
+				EC794C291B039E1F0097F82C /* Foundation.framework in Frameworks */,
+				EC794C271B039E180097F82C /* CoreFoundation.framework in Frameworks */,
+				EC794C251B039E0D0097F82C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,10 @@
 		EC794BF21B0340B00097F82C = {
 			isa = PBXGroup;
 			children = (
+				EC794C2A1B039E270097F82C /* UIKit.framework */,
+				EC794C281B039E1F0097F82C /* Foundation.framework */,
+				EC794C261B039E180097F82C /* CoreFoundation.framework */,
+				EC794C241B039E0D0097F82C /* AVFoundation.framework */,
 				EC794BFD1B0340B00097F82C /* TestRecordVoice */,
 				EC794C171B0340B00097F82C /* TestRecordVoiceTests */,
 				EC794BFC1B0340B00097F82C /* Products */,
@@ -350,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestRecordVoice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestRecordVoice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +436,7 @@
 				EC794C201B0340B00097F82C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC794C211B0340B00097F82C /* Build configuration list for PBXNativeTarget "TestRecordVoiceTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +445,7 @@
 				EC794C231B0340B00097F82C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
